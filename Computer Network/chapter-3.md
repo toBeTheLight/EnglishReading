@@ -69,3 +69,24 @@
   - via 通过、经过 [ˈvaɪə, ˈviə]
   - numerous 许多、数不清 [ˈnu:mərəs]
   - range 范围、排列 [rendʒ]
+
+* Application processes use the logical communication provided by the transport layer to send messages to each other, free from the worry of the details of the physical infrastructure used to carry these message.
+  - physical [ˈfɪzɪkəl]
+  - infrastructure 基础设置 [ˈɪnfrəˌstrʌktʃɚ]
+
+* Figure 3.1 illustrates the notion of ligical communication.
+  - figure 图表、数字、人物 [ˈfɪgjər]
+  - notion 见解、概念 [ˈnoʊʃn]
+
+* On the sending side, the transport layer converts the messages it receives from a sending application process into transport-layer packets, known as transport-layer segments in Internet terminology.
+  - receive [rɪˈsiv]
+  - segment 部分、分段、段 [ˈsɛɡmənt]
+  - terminology 专用名词 [ˌtɜ:rməˈnɑ:lədʒi]
+
+* The transport layer then passes the segment to the network layer at the sending end system, where the segment is encapsulated within network-layer packet (a datagram) and sent to the destination.
+  - encapsulate 封住、概述 [ɛnˈkæpsəˌlet]
+  - datagram 数据报 ['detə,græm]
+  - destination 终点 [,dɛstɪ'neʃən]
+
+* On the receiving side, the network-layer extracts the transport-layer segment from the datagram and passes the segment up to transport layer.
+  - extract 提取 ['ɛkstrækt]
