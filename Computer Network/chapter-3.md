@@ -79,6 +79,7 @@
   - notion 见解、概念 [ˈnoʊʃn]
 
 * On the sending side, the transport layer converts the messages it receives from a sending application process into transport-layer packets, known as transport-layer segments in Internet terminology.
+  - converts 转变 [kənˈvɜ:rt]
   - receive [rɪˈsiv]
   - segment 部分、分段、段 [ˈsɛɡmənt]
   - terminology 专用名词 [ˌtɜ:rməˈnɑ:lədʒi]
@@ -90,3 +91,54 @@
 
 * On the receiving side, the network-layer extracts the transport-layer segment from the datagram and passes the segment up to transport layer.
   - extract 提取 ['ɛkstrækt]
+
+# 3.1.1 
+
+* Recall that the transport layer lies just above the network layer in the protocol stack.
+  - recall 回想起、回忆 ['rikɔl]
+
+* This distinction is subtle but important. Let‘s examine this distinction with the aid of a household analogy.
+  - distinction 区别 [dɪ'stɪŋkʃən]
+  - subtle 微妙的、狡猾的 ['sʌtl]
+  - aid 帮助、助手、援助 [ed]
+  - household 家庭 ['haʊshold]
+  - analogy 类比 [ə'nælədʒi]
+
+* The kids in the two households love to write to each other--each kid writes each cousin every week, with each letter delivered by the traditional postal service in a separate envelope.
+  - cousin 堂（表）兄弟姐妹 ['kʌzn]
+  - traditional 传统的 [trə'dɪʃənl]
+  - postal 邮局的 ['postl]
+  - separate 分离的 [(v) sɛpəˌret;(adj) sɛprɪt]
+  - envelope 信封、包层 ['envələʊp; 'ɒn-]
+
+* They are not involved, for example, in sorting mail in any intermediate mail center or in moving mail from one mail center to another.
+  - involve 参与、涉及 [ɪnˈvɑ:lv]
+  - intermediate 中间的 [ˌɪntərˈmi:diət]
+
+* Within an end system, a transport protocol moves messages from application processes to the network edge (that is, the network layer) and vice versa, but it doesn't have any say about how the messages are moved within the network core.
+  - edge 边缘 [ɛdʒ]
+  - network edge 网络接收层
+  - and vice versa 反之亦然
+  - core [kɔr, kor]
+
+* Intermediate routers neither act on, nor recognize, any information that the transport layer may have added to the application messages.
+  - recognize 识别承认 [ˈrɛkəɡˌnaɪz]
+
+* In a similar manner, the services that a transport protocol can provide are often constrained by the service model of the underlying network-layer protocol.
+  - manner 方法、方式、样子 [ˈmænɚ]
+  - constraine 受限 [kənˈstreɪnd]
+  - underlying 潜在、底层 [ˌʌndərˈlaɪɪŋ]
+
+* If the network-layer protocol cannot provide delay or bandwidth guarantees for transport-layer segments sent between hosts, then the transport-layer protocol cannot provide delay or bandwidth guarantees for application messages sent between processes.
+  - bandwidth 带宽 [ˈbændˌwɪdθ, -ˌwɪθ]
+  - guarantee 保证 [ˌɡærənˈti]
+
+* For example, as we'll see in this chapter, a transport protocol can offer reliable data transfer service to an application even when the underlying network protocol is unreliable, that is, even when the network protocol loses, garbles, or duplicates packets.
+  - garble 歪曲、篡改 [ˈɡɑrbəl]
+  - duplicate 复制 [ˈdu:plɪkeɪt]
+
+* As another example (which we'll explore in Chapter 8 when we discuss network security), a transport protocol can use encryption to guarantee that application messages are not read by intruders, even when the network layer cannot guarantee the confidentiality of transport-layer segments.
+  - security 安全、保证 [səˈkjʊrəti]
+  - encryption 加密 [ɪn'krɪpʃn]
+  - intruder 干扰者、闯入者 [ɪn'tru:dər]
+  - confidentiality 机密性 [ˌkɑ:nfɪˌdenʃiˈæləti]
