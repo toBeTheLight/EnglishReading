@@ -92,7 +92,7 @@
 * On the receiving side, the network-layer extracts the transport-layer segment from the datagram and passes the segment up to transport layer.
   - extract 提取 ['ɛkstrækt]
 
-# 3.1.1 
+## 3.1.1 
 
 * Recall that the transport layer lies just above the network layer in the protocol stack.
   - recall 回想起、回忆 ['rikɔl]
@@ -142,3 +142,38 @@
   - encryption 加密 [ɪn'krɪpʃn]
   - intruder 干扰者、闯入者 [ɪn'tru:dər]
   - confidentiality 机密性 [ˌkɑ:nfɪˌdenʃiˈæləti]
+
+## 3.1.2
+
+* Recall that the Internet, and more generally a TCP/IP network, makes available two distinct transport-alyer protocols to the application layer.
+  - generally 通常 [ˈdʒɛnərəli]
+  - distinct 明显的、有区别的 [dɪˈstɪŋkt] 
+
+* But this same Internet literature also uses the term datagram for the network-layer packet! For an introductory book on computer networking such as this, we believe that it is less confusing to refer to both TCP and UDP packets as segments, and reserve the term datagram for the network-layer packet.
+  - literature 文学作品、著作 [ˈlɪtərəˌtʃʊr, -tʃɚ]
+  - term 术语 [tɜ:rm]
+  - introductory 引导的、介绍的 [ˌɪntrəˈdʌktəri]
+  - confuse 使困惑 [kənˈfjuz]
+  - reserve 保留 [rɪˈzɜ:rv]
+
+* Having taken a glimpse at the IP service model, let's now summarize the service models provided by UDP and TCP.
+  - glimpse 一瞥 [ɡlɪmps]
+  - summarize 总结 [ˈsʌməˌraɪz]
+
+* Extending host-to-host delivery to process-to-process delivery is called transport-layer multiplexing and demultiplexing.
+  - multiplexing 多路复用 ['mʌltɪpleksɪŋ]
+  - demultiplexing 多路分解 [dɪmʌltɪp'leksɪŋ]
+
+* UDP and TCP also provide integrity checking by including error-detection fields in their segments' headers. These two minimal transport-layer services——process-to-process data delivery and error checking——are the only two services that UDP provides!
+  - integrity 完整、健全、正直 [ɪnˈtɛɡrɪti]
+  - detection 检测 [dɪˈtɛkʃən]
+  - minimal 极小的、最小的 [ˈmɪnəməl]
+
+* TCP congestion control prevents any one TCP connection from swamping the links and routers between communicating hosts with an excessive amount of traffic.
+  - swamp 淹没 [swɑ:mp]
+  - excessive 过多的 [ɪkˈsɛsɪv]
+  - amount 量、总和 [əˈmaʊnt]
+  
+* TCP strives to give each connection traversing a congested link an equal share of the link bandwidth.
+  - strive 力争 [straɪv]
+  - traverse 通过 [trəˈvɜ:rs]
