@@ -177,3 +177,58 @@
 * TCP strives to give each connection traversing a congested link an equal share of the link bandwidth.
   - strive 力争 [straɪv]
   - traverse 通过 [trəˈvɜ:rs]
+
+# 3.2
+
+* Because at any given time there can be more than one socket in the receiving host, each socket has a unique identifier.
+  - unique 独特的 [juˈnik]
+  - identifier 识别码 [aɪ'dɛntɪfaɪɚ]
+
+* Now let's consider how a receiving host directs an incoming transport-layer segment to the appropriate socket.
+  - incoming 进来的
+  - appropriate 合适 [əˈproʊpriət]
+
+* Each transport-layer segment has a set of fields in the segment for this purpose.
+  - purpose 目的 [ˈpɜ:rpəs]
+
+* The job of gathering data chunks at the source host from different socket, encapsulating each data chunk with header information (that will be later be used in demultiplexing) to create segment, and passing the segments to the network layer is called multiplexing.
+  - gather 收集、采集 [ˈɡæðɚ]
+
+* When Bill receives a batch of mail from the mail carrier, he performs a demultiplexing operation by observing to whom the letters are addressed and then hand delivering the mail to his brothers and sisters.
+  - batch 一批 [bætʃ]
+  - perform 执行 [pərˈfɔ:rm]
+  - operation 操作 [ˌɑ:pəˈreɪʃn]
+  - observe 观察 [əbˈzɜ:rv]
+
+* Typically, the client side of the application lets the transport layer automatically (and transparently) assign the port number, whereas the server side of the application assigns a specific port number.
+  - typically 通常的 [ˈtɪpɪklɪ]
+  - automatically 自动的、无意识的 [ˌɔtəˈmætɪkl:ɪ]
+  - assign 分配、归属 [əˈsaɪn]
+  - whereas 然而、反之 [ˌwerˈæz]
+  - specific 明确的 [spɪˈsɪfɪk]
+
+* The server host may support many simultaneous TCP sockets, with each socket attached to a process, and with each socket idenitified by its own four-tuple.
+  - simultaneous 同时的 [ˌsaɪmlˈteɪniəs]
+  - attached 固定从属 [əˈtætʃ]
+  - tuple 元组 [tʌpl]
+  - idenitify 识别 [aɪˈdɛntəˌfaɪ]
+
+* It's instructive to say a few additional words about Web servers and how they use port numbers.
+  - instructive 有益的、教育的 [ɪnˈstrʌktɪv]
+  - additional 补充的 [ə'dɪʃənl]
+
+* The server distinguishes the segments from the different clients using source IP addresses and source port numbers.
+  - distinguish 区分、辨别 [dɪˈstɪŋɡwɪʃ] 
+
+* If the client and server are using persistent HTTP, then throughout the duration of the persistent connection the client and server exchange HTTP messages via the same server socket.
+  - persistent 持续的、坚持的 [pərˈsɪstənt]
+  - throughout 在...期间、遍布 [θruˈaʊt]
+  - duration 持续期间 [duˈreɪʃn]
+  - exchange 交换 [ɪksˈtʃendʒ]
+
+* This frequent creating and closing of sockets can severely impact the performance of a busy Web server (although a number of operating system tricks can be used to mitigate the problem).
+  - frequent 频繁 [ˈfrikwənt]
+  - severely 严重的 [səˈvɪrlɪ]
+  - impact 影响、冲击 [ˈɪmˌpækt]
+  - trick 戏法、技巧 [trɪk]
+  - mitigate 使缓和、减轻 [ˈmɪtˌɪɡet]
