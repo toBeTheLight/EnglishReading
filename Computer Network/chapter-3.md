@@ -61,7 +61,7 @@
 * We'll consider the causes and consequences of congestion, as well as commonly used congestion-control techniques.
   - consequence 后果 [ˈkɑ:nsəkwens]
 
-## 3.1
+# 3.1
 
 * By logical communication, we mean that from an application's perspective, it is as if the hosts running the processes were directly connected; in reality, the hosts may be on opposite sides of the planet, connected via numerous routers and a wide range of link types.
   - perspective 观点、角度 [pərˈspektɪv]
@@ -232,3 +232,41 @@
   - impact 影响、冲击 [ˈɪmˌpækt]
   - trick 戏法、技巧 [trɪk]
   - mitigate 使缓和、减轻 [ˈmɪtˌɪɡet]
+
+# 3.3
+
+* To motivate our discussion about UDP, suppose you were interested in designing a no-frills, bare-bones transport prorocol.
+  - motivate 促使、刺激 [ˈmoʊtɪveɪt]
+  - frill 装饰 [frɪl]
+  - bare-bones 皮包骨头、极简的 [ber] [boʊnz]
+
+* You might first consider using a vacuous transport protocol.
+  - vacuous 空虚、无聊、愚蠢的 [ˈvækjuəs]
+
+* TCP, on the other hand, has a congestion-control mechanism that throttles the transport-layer TCP sender when one or more links between the source and destination hosts become excessively congested.
+  - mechanism 机制、机理 [ˈmɛkəˌnɪzəm]
+  - throttle 遏制、压制 [ˈθrɑ:tl]
+
+* TCP will also continue to resend a segment until the receipt of the segment has been acknowledged by the destination, regardless of how long reliable delivery takes.
+  - receipt 收据、发票 [rɪˈsit]
+  - acknowledged 公认、承认 [ək'nɒlɪdʒd]
+  - regardless 不管怎样、不顾后果 [rɪˈgɑ:rdləs]
+
+* Although commonly done today, running multimedia applications over UDP is controversial.
+  - multimedia 多媒体 [ˌmʌltiˈmidiə]
+  - controversial 有争议的 [ˌkɑ:ntrəˈvɜ:rʃl]
+
+* There would be so much packet overflow at routers that very few UDP packets would successfully traverse the source-to-destination path.
+  - overflow 溢出
+  - traverse 穿过 [trəˈvɜ:rs]
+
+* Moreover, the high loss rates induced by the uncontrolled UDP senders would cause the tcp sender (which, as we'll see, do decrease their sending rates in the face of congestion) to dramatically decrease their rates.
+  - induce 引起 [ɪnˈdu:s]
+  - decrease 减少 [dɪˈkris]
+  - dramatically 引人注目的 [drəˈmætɪkl:ɪ]
+
+* That is, application processes can communicate reliably without being subjected to the transmission-rate constraints imposed by TCP’s congestion-control mechanism.
+  - subjecte 屈从 [ˈsʌbdʒekt]
+  - constraints 约束、限制 [kənˈstrent]
+  - impose 强加 [ɪmˈpoʊz]
+  - mechanism 机制 [ˈmɛkəˌnɪzəm]
