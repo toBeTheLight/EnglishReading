@@ -266,7 +266,26 @@
   - dramatically 引人注目的 [drəˈmætɪkl:ɪ]
 
 * That is, application processes can communicate reliably without being subjected to the transmission-rate constraints imposed by TCP’s congestion-control mechanism.
-  - subjecte 屈从 [ˈsʌbdʒekt]
-  - constraints 约束、限制 [kənˈstrent]
+  - subject 屈从 [ˈsʌbdʒekt]
+  - constraint 约束、限制 [kənˈstrent]
   - impose 强加 [ɪmˈpoʊz]
   - mechanism 机制 [ˈmɛkəˌnɪzəm]
+
+## 3.3.1
+
+* The checksum is used by the receiving host to check whether error have been introduced into the segment. In truth, the checksum is also calculated over a few of the fields in the IP header in addition to the UDP segment.
+  - checksum 校验 [ˈtʃeksʌm]
+  - introduce 引进 [ˌɪntrəˈdu:s]
+  - calculate 计算、估算 [ˈkælkjəˌlet]
+  - addition 增加 [əˈdɪʃən]
+  - in addition to 除了
+
+## 3.3.2
+
+The checksum is used to determine whether bits within the UDP segment have been altered (for example, by noise in the links or while stored in a router) as it moved from source to destination.
+  - determine 确定 [dɪˈtɜ:rmɪn]
+  - alter 改变 [ˈɔltɚ]
+
+* UDP at the sender side performs the 1s complement of the sum of all the 16-bit words in the segment, with any overflow encountered during the sum being wrapped around.
+  - complement 补码 [ˈkɑ:mplɪment]
+  - encounter 遭遇 [ɛnˈkaʊntɚ]
