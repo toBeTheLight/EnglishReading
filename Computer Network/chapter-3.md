@@ -289,3 +289,34 @@ The checksum is used to determine whether bits within the UDP segment have been 
 * UDP at the sender side performs the 1s complement of the sum of all the 16-bit words in the segment, with any overflow encountered during the sum being wrapped around.
   - complement 补码 [ˈkɑ:mplɪment]
   - encounter 遭遇 [ɛnˈkaʊntɚ]
+
+# 3.4
+
+* This is appropritate since the problem of implementing reliable data transfer occurs not only at the transport layer.
+  - appropritate 适当的 [əˈprəʊpriət]
+  - implementing 事实、执行 [ˈɪmpləmənt]
+  - occur 发出、出现 [əˈkɚ]
+
+* Indeed, if one had to identify a "top-ten" list of fundamentally  important problems in all of networking, this would be a candidate to lead the list.
+  - Indeed 确实 [ɪnˈdid]
+  - identify 确定、认出 [aɪˈdɛntəˌfaɪ]
+  - candidate 报考者、候选 [ˈkændɪˌdet]
+
+* In the next section we'll examine TCP and show, in particular, that TCP exploits many of the principles that we are about to describe.
+  - exploit 开拓、开采 [ɪkˈsplɔɪt]
+
+* This is precisely the service model offered by TCP to the Internet applications that invoke it.
+  - precise 精密、精确的 [prɪˈsaɪs]
+
+* It is the responsibility of a reliable data transfer protocol to implement this service abstraction.
+  - abstraction 抽象 [æbˈstrækʃən]
+
+* In this section, we will incrementally develop the sender and receiver sides of a reliable data transfer protocol, considering increasingly complex models of the underlaying channel.
+  - incrementally 逐渐地 [,inkri'məntəli]
+  - complex [kəmˈpleks]
+
+* In this section we consider only the case of unidirectional data transfer, that is, data transfer from the sending to the receiving side. The case of reliable bidirectional data transfer is conceptually no more difficult but considerably more tedious to explain.
+  - unidirectional 单向的 [ˌju:nɪdə'rekʃənəl]
+  - bidirectional 双向的 [ˌbaɪdɪˈrɛkʃənəl]
+  - conceptually 概念地 [kən'septʃʊrlɪ]
+  - tedious 昂长的 [ˈtidiəs]
