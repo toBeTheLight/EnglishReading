@@ -320,3 +320,9 @@ The checksum is used to determine whether bits within the UDP segment have been 
   - bidirectional 双向的 [ˌbaɪdɪˈrɛkʃənəl]
   - conceptually 概念地 [kən'septʃʊrlɪ]
   - tedious 昂长的 [ˈtidiəs]
+
+## 3.4.1
+
+* The protocol itself, which we'll call rdt 1.0, is trivial. The **finite-state machine(FSM)** definitions for the rdt1.0 sender and receiver are shown in Figure 3.9.
+  - trivial 平常的、琐碎的 [ˈtrɪviəl]
+  - finite-state machine 有限状态机
