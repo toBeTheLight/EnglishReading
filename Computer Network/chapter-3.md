@@ -326,3 +326,27 @@ The checksum is used to determine whether bits within the UDP segment have been 
 * The protocol itself, which we'll call rdt 1.0, is trivial. The **finite-state machine(FSM)** definitions for the rdt1.0 sender and receiver are shown in Figure 3.9.
   - trivial 平常的、琐碎的 [ˈtrɪviəl]
   - finite-state machine 有限状态机
+
+## 3.4.2
+
+* Such bit errors typically occur in the physical components of a network as a packet is transmitted, propagates, or is buffered.
+  - typically 通常 [ˈtɪpɪklɪ]
+  - transmit 传输、发射 [trænsˈmɪt]
+  - propagate 传播 [ˈprɑ:pəgeɪt]
+  - buffer 缓冲 [ˈbʌfɚ]
+
+* Consider how you yourself might dictate a long message over the phone.
+  - dictate 口述 [ˈdɪkteɪt]
+
+* In a typically scenario, the message taker might say "OK" after each sentence has been heard, understood, and recorded.
+  - sentence 句子 [ˈsɛntəns]
+
+* First, a mechanism is needed to allow the receiver to detect when bit errors have occurred.
+  - mechanism 机制 [ˈmɛkəˌnɪzəm]
+  - detect 查明、检测 [dɪˈtɛkt]
+
+* Unfortunately, our slight oversight is not as innocuous as it may seem.
+  - unfortunately 不幸的 [ʌnˈfɔ:rtʃənətli]
+  - slight 微小的 [slaɪt]
+  - oversight 疏忽 [ˈoʊvərsaɪt]
+  - innocuous 无害的 [ɪˈnɑ:kjuəs]
